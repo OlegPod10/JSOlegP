@@ -28,22 +28,26 @@ if(userAge >= 18) {
 
 let blockConfirm = confirm('Хотите ввести название блока?')
 if (blockConfirm) {
-    let blockYes = prompt('Введите название блока')
-    let elementConfirm = confirm('Хотите ввести название элемента?')
-    if (elementConfirm) {
-        let elementYes = prompt('Введите название элемента')
-        let modConfirm = confirm('Хотите ввести название модификатора?')
-        if (modConfirm) {
-            let modYes = prompt('Введите название модификатора')
-            alert(blockYes+"_"+elementYes+"-"+modYes)
+    let blockYes = prompt('Введите название блока') 
+    if (blockYes) {
+        let elementConfirm = confirm('Хотите ввести название элемента?')
+        if (elementConfirm) {
+            let elementYes = prompt('Введите название элемента')
+            let modConfirm = confirm('Хотите ввести название модификатора?')
+            if (modConfirm) {
+                let modYes = prompt('Введите название модификатора')
+                alert(blockYes+"_"+elementYes+"-"+modYes)
+            }
+            else {
+                alert(blockYes+"_"+elementYes)
+            }
+        } else  {
+            alert(blockYes);
         }
-        else {
-            alert(blockYes+"_"+elementYes)
-        }
-    } else  {
-        alert(blockYes);
     }
-
+    else {
+        alert("Элементу не присвоен класс")
+    }
 } 
 
 
