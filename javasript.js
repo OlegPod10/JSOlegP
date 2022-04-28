@@ -74,6 +74,5 @@ else if (numbersOperation === "mult") {
     alert("Ваш результат: " + mult)
 }
 else if (numbersOperation === "minus") {
-    55
     alert("Ваш результат: " + minus)
 }
